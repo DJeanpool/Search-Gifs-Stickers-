@@ -1,0 +1,34 @@
+  <div class="bg-dark border-right p-3" id="sidebar">
+    <h3 class="text-white">
+      GifsApp-JP
+    </h3>
+
+    <hr class="text-white">
+
+    <div  class="list-group">
+      <h4 class="text-white">
+        Favoritos 
+      </h4>
+      <a  href="#"
+          class="list-group-item list-group-item-action">
+          Mis Favoritos
+      </a>
+
+    </div>
+    
+
+    <hr class="text-white">
+
+    <div  class="list-group list-reset">
+      <h4 class="text-white">
+        Ultimas Busquedas
+      </h4>
+      <a  *ngFor="let item of historial"
+          href="#"
+          class="list-group-item list-group-item-action">
+          
+          {{ item | titlecase}}
+      </a>
+
+    </div>
+  </div>
